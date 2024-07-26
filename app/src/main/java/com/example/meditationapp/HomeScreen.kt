@@ -29,6 +29,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.meditationapp.ui.theme.ButtonBlue
@@ -67,7 +68,7 @@ fun TopAppBar(modifier: Modifier = Modifier) {
     ), title = {
         Column {
             Text(
-                text = "Hello, Moh", style = MaterialTheme.typography.titleMedium
+                text = "Hello, Moh", style = MaterialTheme.typography.titleMedium, fontStyle = FontStyle.Italic
             )
             Text(
                 text = "Happy Meditation", style = MaterialTheme.typography.titleMedium
@@ -150,7 +151,6 @@ fun Chip(chipTxt: String, modifier: Modifier = Modifier) {
         colors = FilterChipDefaults.filterChipColors(
             selectedContainerColor = ButtonBlue,
             containerColor = DarkerButtonBlue,
-
             ),
         border = FilterChipDefaults.filterChipBorder(enabled = false, selected = false),
         shape = RoundedCornerShape(10.dp)
