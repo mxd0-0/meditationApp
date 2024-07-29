@@ -45,7 +45,7 @@ import com.example.meditationapp.ui.theme.DeepBlue
 import com.example.meditationapp.ui.theme.LightRed
 import com.example.meditationapp.ui.theme.TextWhite
 
-
+//need to adjust colors 
 @Composable
 fun HomeScreen() {
     Box(
